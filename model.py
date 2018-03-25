@@ -1805,8 +1805,6 @@ class MaskRCNN(nn.Module):
 
         self.epoch = epochs
 
-
-
     def train_epoch(self, datagenerator, optimizer, steps):
         batch_count = 0
         loss_sum = 0
@@ -1938,8 +1936,6 @@ class MaskRCNN(nn.Module):
             step += 1
 
         return loss_sum
-
-
 
     def mold_inputs(self, images):
         """Takes a list of images and modifies them to the format expected
